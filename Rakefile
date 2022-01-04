@@ -22,3 +22,9 @@ task :console do
   ActiveRecord::Base.logger = Logger.new(STDOUT)
   Pry.start
 end
+
+# Might need to add the below code 
+# desc "Start the server"
+# task :server do
+#   exec "rerun -b 'rackup config.ru'"
+# end
