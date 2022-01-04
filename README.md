@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Phase 3 Project Guidelines
 
 ## Learning Goals
@@ -116,3 +117,6 @@ fetch("http://localhost:9292/test")
 [dbdiagram.io]: https://dbdiagram.io/
 [postman download]: https://www.postman.com/downloads/
 [network tab]: https://developer.chrome.com/docs/devtools/network/
+=======
+# star_vault_back_end
+>>>>>>> 13031551f6b7eb4b41449eb20b6ca5d4e9d9e97c
