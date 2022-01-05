@@ -25,4 +25,15 @@ class ApplicationController < Sinatra::Base
     star.to_json
   end
 
+  post "/stars" do
+    star = Star.create(
+      name: params[:name],
+      distance: params[:distance],
+      apparent_magnitude: params[:apparent_magnitude],
+      temperature: params[:temperature],
+      confirmed_planets: params[:confirmed_planets]
+    )
+    star.to_json
+  end
+
 end
