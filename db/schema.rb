@@ -17,9 +17,11 @@ ActiveRecord::Schema.define(version: 2022_01_04_143544) do
   end
 
   create_table "stars", force: :cascade do |t|
+    t.string "username"
     t.string "name"
     t.integer "distance"
     t.integer "apparent_magnitude"
+    t.integer "temperature"
     t.integer "confirmed_planets"
     t.integer "user_id"
     t.integer "constellation_id"
