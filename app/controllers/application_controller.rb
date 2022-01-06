@@ -36,8 +36,4 @@ class ApplicationController < Sinatra::Base
       constellation_id: Constellation.last.id
     )
   end
-
-
-
-
 end
