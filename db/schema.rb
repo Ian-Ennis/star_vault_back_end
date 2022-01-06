@@ -10,27 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_04_143544) do
+ActiveRecord::Schema.define(version: 2022_01_04_143538) do
 
   create_table "constellations", force: :cascade do |t|
-    t.string "name"
+    t.string "constellation_name"
   end
 
   create_table "stars", force: :cascade do |t|
-    t.string "username"
     t.string "name"
     t.integer "distance"
     t.integer "apparent_magnitude"
     t.integer "temperature"
     t.integer "confirmed_planets"
-    t.integer "user_id"
     t.integer "constellation_id"
     t.index ["constellation_id"], name: "index_stars_on_constellation_id"
-    t.index ["user_id"], name: "index_stars_on_user_id"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "username"
   end
 
 end
