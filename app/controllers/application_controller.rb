@@ -3,7 +3,6 @@ require 'pry'
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
-  # Add your routes here
   get "/constellations" do
     constellations = Constellation.all;
     constellations.to_json({only: [:constellation_name, :id]});
